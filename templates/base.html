@@ -1,0 +1,37 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Django Snacks{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'src/output.css' %}" type="text/css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-black text-white py-4">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">Django Snacks</h1>
+        </div>
+    </header>
+
+    <nav class="bg-gray-800 text-white">
+        <div class="container mx-auto">
+            <ul class="flex space-x-4 p-4">
+                <li><a href="{% url 'snacks:home' %}" class="hover:text-teal-500">Home</a></li>
+                <li><a href="{% url 'snacks:about' %}" class="hover:text-teal-500">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto my-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2022 Django Snacks</p>
+        </div>
+    </footer>
+</body>
+</html>

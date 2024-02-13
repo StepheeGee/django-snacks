@@ -1,10 +1,9 @@
-from django.urls import path
-from .views import home, about
+# snacks/urls.py
 
-app_name = 'snacks'  # This is used by the {% url %} template tag to reference the correct URL pattern
+from django.urls import path
+from .views import HomePageView, AboutPageView
 
 urlpatterns = [
-    path('', home, name='home'),      # Maps to the home view
-    path('about/', about, name='about'),  # Maps to the about view
-  
+    path('', HomePageView.as_view(), name='home'),
+    path('about', AboutPageView.as_view(), name='about'),
 ]
