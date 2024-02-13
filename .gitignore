@@ -9,6 +9,9 @@ https://github.com/github/gitignore/blob/main/Python.gitignore
 .venv
 .venv/
 package-lock.json
+node_modules/
+node_modules/*
+node_modules
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

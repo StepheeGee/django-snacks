@@ -1,3 +1,4 @@
+#snacks_project/urls.py
 """
 URL configuration for snacks_project project.
 
