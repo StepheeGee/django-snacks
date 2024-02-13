@@ -1,7 +1,8 @@
-
 # Lab 26: Django Snacks
 
-This lab explores the Django web framework by building a simple web application called "Django Snacks." The application showcases the use of Django's views, templates, and static files to create a basic website with multiple pages. (2.12.24)
+2.12.24
+
+This lab explores the Django web framework by building a simple web application called "Django Snacks." The application showcases the use of Django's views, templates, and static files to create a basic website with multiple pages.
 
 ## Author: Stephanie G. Johnson
 
@@ -56,15 +57,15 @@ The application will be accessible at [http://127.0.0.1:8000/](http://127.0.0.1:
 
 ## Project Structure
 
-- `snacks/`: Django application directory.
-  - `urls.py`: Define URL patterns for the application.
-  - `views.py`: Contains view classes for rendering HTML pages.
-  - `templates/`: Directory for HTML templates.
-  - `static/`: Directory for static files such as CSS.
-
-- `snacks_project/`: Project-level directory.
-  - `settings.py`: Project settings including installed apps and configurations.
-  - `urls.py`: Project-level URL configurations.
+- **`django-snacks/`**: Project-level directory.
+  - **`snacks/`**: Django application directory.
+    - **`urls.py`**: Define URL patterns for the application.
+    - **`views.py`**: Contains view classes for rendering HTML pages.
+  - **`snacks_project/`**: Project settings and configurations.
+    - **`settings.py`**: Project settings including installed apps and configurations.
+    - **`urls.py`**: Project-level URL configurations.
+  - **`static/`**: Directory for static files such as CSS.
+  - **`templates/`**: Directory for HTML templates.
 
 ## Pages
 
@@ -85,4 +86,3 @@ The application will be accessible at [http://127.0.0.1:8000/](http://127.0.0.1:
 Feel free to explore, modify, and extend the project as part of the learning process.
 
 Happy coding!
-
